@@ -1,0 +1,38 @@
+body {
+    background-color: #E8ECEF;
+  }
+  
+  .centered {
+      padding-top: 200px;
+      text-align: center;
+  }
+  
+  .secret-text {
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    background-color: #000;
+  }
+ .centermaker-1{
+    margin-left: 200px;
+    padding-top: 100px;
+ }  
+ /* .full-size {
+    background: url("https://plus.unsplash.com/premium_photo-1675033558464-a9d0859b6230?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1460&q=80") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position:absolute;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;
+  } */
+  .margner-1{
+    margin-right: 50px;
+  }
+  .register-padder{
+    padding-left: 180px;
+    padding-bottom: 30px;
+  }
