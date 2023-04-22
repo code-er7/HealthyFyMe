@@ -29,6 +29,10 @@
               <label for="password">Password</label>
               <input type="password" class="form-control" name="password">
             </div>
+            <% if(count > 0){ %>
+             <p>OOPS ! Wrong Password Try again</p>
+            <% } %>
+            
             <button type="submit" class="btn btn-dark">Login</button>
           </form>
 
