@@ -36,3 +36,38 @@ body {
     padding-left: 180px;
     padding-bottom: 30px;
   }
+  .div-2-pad{
+    padding: 0;
+    margin: 0;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .navbar-custom {
+    background-color:#c2dac4;
+}
+  .cover-img{
+   
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+  }
+  .allingment-img{
+    background-color:#ffeed2;
+   padding-top: 200px;
+  }
+  .responsive-imgg{
+    width: 100%;
+    height: auto;
+  }
+  .top-then-nav{
+    background-color:#c2dac4;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .display-lines{
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+  }

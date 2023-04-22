@@ -1,3 +1,138 @@
 <%- include('partials/header') %>
- <h1>this the the main website</h1>
-<%- include('partials/footer') %>
+
+
+    <!-- //navigation bar -->
+    
+    <nav class="navbar navbar-expand-lg  navbar-custom">
+        <div class="container-fluid ">
+            <a class="navbar-brand" href="#">HealtyFy Me</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i class="fa-solid fa-angle-down fa-bounce"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link" href="#">Pricing</a>
+                    <a class="nav-link disabled">Premium</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="top-then-nav">
+        <i class="fa-solid fa-people-group fa-beat fa-6x" style="color: #026b00;"></i>
+    </div>
+    <div >
+        <img  class="cover-img" src="https://cdn.shopify.com/s/files/1/0601/1505/8873/files/Untitled_1800_x_600_px_1600_x_600_px_2_1950x.png?v=1682149611" alt="">
+    </div>
+    <div class="container-fluid ">
+        <div class="row">
+            <div class="col-lg-6  col-sm-12 " style="background-color: #ffeed2; ">
+                <br>
+                <br>
+                <br>
+                <h1 class = "display-3">
+                    Hello! <%=Userdata.name %>
+                </h1>  
+                <h1 class = "display-3">
+                 <i></i> 
+                </h1>
+              <p class = "display-5">Do you know about  BMI ?</p>
+              <p class = "display-lines" >Body mass index is a value derived from the mass and height of a person. The BMI is defined as the body mass divided by the square of the body height, and is expressed in units of kg/m², resulting from mass in kilograms and height in metres</p>
+              <p class = "display-lines"> Your Current BMI is - <%=Userdata.bmi%></p> 
+              <% if(Userdata.bmi<18){ %>
+                <p class = "display-lines">You are little bit in underweight catogory , but don't worry millets will surely help you to fullfill your protien requirements and help you become fit</p>
+               <% } %>
+              <% if(Userdata.bmi > 24){ %>
+                <p class = "display-lines">You are little bit in overweight catogory , but don't worry these millets will bring back you in shape in no time</p>
+               <% } %>
+              <%  if (Userdata.bmi < 24 & Userdata.bmi >18){ %>
+                <p class = "display-lines">That's pretty nice , you are already Fit Here are some millets which will keep you in shape</p>
+               <% } %>
+            </div>
+            <div class="col-lg-6  col-sm-12 allingment-img" >
+                <img  class="responsive-imgg" src="https://www.fitterfly.com/blog/wp-content/uploads/2023/02/Understanding-Your-BMI-A-Guide-to-Reading-a-BMI-Chart.jpg" alt="">
+            </div>
+        </div>
+    </div>
+   <div>
+    <h1 class = "display-3 top-then-nav">Why Millets ?</h1>
+   </div>
+
+    <div class = "millets-type">
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col-lg-6  col-sm-12 " style="background-color: red; height: 200px;">
+                    <h1>
+                        millets
+                    </h1>
+                </div>
+                <div class="col-lg-6  col-sm-12" style="background-color: green;  height: 200px;">
+                    <h2>millets image</h2>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col-lg-6  col-sm-12 " style="background-color: red; height: 200px;">
+                    <h1>
+                        millets
+                    </h1>
+                </div>
+                <div class="col-lg-6  col-sm-12" style="background-color: green;  height: 200px;">
+                    <h2>millets image</h2>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col-lg-6  col-sm-12 " style="background-color: red; height: 200px;">
+                    <h1>
+                        millets
+                    </h1>
+                </div>
+                <div class="col-lg-6  col-sm-12" style="background-color: green;  height: 200px;">
+                    <h2>millets image</h2>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col-lg-6  col-sm-12 " style="background-color: red; height: 200px;">
+                    <h1>
+                        millets
+                    </h1>
+                </div>
+                <div class="col-lg-6  col-sm-12" style="background-color: green;  height: 200px;">
+                    <h2>millets image</h2>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col-lg-6  col-sm-12 " style="background-color: red; height: 200px;">
+                    <h1>
+                        millets
+                    </h1>
+                </div>
+                <div class="col-lg-6  col-sm-12" style="background-color: green;  height: 200px;">
+                    <h2>millets image</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <h1>this the the main website</h1>
+    <p>
+        
+    </p>
+    <p>
+        
+    </p>
+    <%- include('partials/footer') %>

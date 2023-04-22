@@ -36,7 +36,7 @@ app.get("/website" ,function(req, res){
     if(Userdata==null)res.redirect("/login");
     else{
     console.log(Userdata.name , Userdata.BMI);
-    res.render("website");
+    res.render("website" ,{Userdata:Userdata});
     }
     
 });
