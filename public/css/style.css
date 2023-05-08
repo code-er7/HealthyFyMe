@@ -57,6 +57,9 @@ body {
     background-color:#c2dac4;
    padding-top: 200px;
   }
+  .allingment-img1{
+    padding-top: 150px;
+  }
   .responsive-imgg{
     width: 100%;
     height: auto;
@@ -84,3 +87,4 @@ body {
       font-size: 3.5rem;
     }
   }
+  
