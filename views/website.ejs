@@ -2,7 +2,7 @@
 
 
     <!-- //navigation bar -->
-    
+
     <nav class="navbar navbar-expand-lg  navbar-custom">
         <div class="container-fluid ">
             <a class="navbar-brand" href="#">HealtyFy Me</a>
@@ -23,53 +23,107 @@
     <div class="top-then-nav">
         <i class="fa-solid fa-people-group fa-beat fa-6x" style="color: #026b00;"></i>
     </div>
-    <div >
-        <img  class="cover-img" src="https://cdn.shopify.com/s/files/1/0601/1505/8873/files/Untitled_1800_x_600_px_1600_x_600_px_2_1950x.png?v=1682149611" alt="">
+    <div>
+        <img class="cover-img"
+            src="https://cdn.shopify.com/s/files/1/0601/1505/8873/files/Untitled_1800_x_600_px_1600_x_600_px_2_1950x.png?v=1682149611"
+            alt="">
     </div>
     <div class="container-fluid ">
         <div class="row">
-            <div class="col-lg-6  col-sm-12 " style="background-color: #ffeed2; ">
+            <div class="col-lg-6  col-sm-12 " style="background-color: #c2dac4; ">
                 <br>
                 <br>
                 <br>
-                <h1 class = "display-3">
+                <h1 class="display-3">
                     Hello! <%=Userdata.name %>
-                </h1>  
-                <h1 class = "display-3">
-                 <i></i> 
                 </h1>
-              <p class = "display-5">Do you know about  BMI ?</p>
-              <p class = "display-lines" >Body mass index is a value derived from the mass and height of a person. The BMI is defined as the body mass divided by the square of the body height, and is expressed in units of kg/m², resulting from mass in kilograms and height in metres</p>
-              <p class = "display-lines"> Your Current BMI is - <%=Userdata.bmi%></p> 
-              <% if(Userdata.bmi<18){ %>
-                <p class = "display-lines">You are little bit in underweight catogory , but don't worry millets will surely help you to fullfill your protien requirements and help you become fit</p>
-               <% } %>
-              <% if(Userdata.bmi > 24){ %>
-                <p class = "display-lines">You are little bit in overweight catogory , but don't worry these millets will bring back you in shape in no time</p>
-               <% } %>
-              <%  if (Userdata.bmi < 24 & Userdata.bmi >18){ %>
-                <p class = "display-lines">That's pretty nice , you are already Fit Here are some millets which will keep you in shape</p>
-               <% } %>
+                <h1 class="display-3">
+                    <i></i>
+                </h1>
+                <p class="display-5">Do you know about BMI ?</p>
+                <p class="display-lines">Body mass index is a value derived from the mass and height of a person. The
+                    BMI is defined as the body mass divided by the square of the body height, and is expressed in units
+                    of kg/m², resulting from mass in kilograms and height in metres</p>
+                <p class="display-lines"> Your Current BMI is
+                <h3 class="display-3">
+                    <%=Userdata.bmi%>
+                </h3>
+                </p>
+                <% if(Userdata.bmi<18){ %>
+                    <p class="display-lines">You are little bit in underweight catogory , but don't worry millets will
+                        surely help you to fullfill your protien requirements and help you become fit</p>
+                    <% } %>
+                        <% if(Userdata.bmi> 24){ %>
+                            <p class="display-lines">You are little bit in overweight catogory , but don't worry these
+                                millets will bring back you in shape in no time</p>
+                            <% } %>
+                                <% if (Userdata.bmi < 24 & Userdata.bmi>18){ %>
+                                    <p class="display-lines">That's pretty nice , you are already Fit Here are some
+                                        millets which will keep you in shape</p>
+                                    <% } %>
             </div>
-            <div class="col-lg-6  col-sm-12 allingment-img" >
-                <img  class="responsive-imgg" src="https://www.fitterfly.com/blog/wp-content/uploads/2023/02/Understanding-Your-BMI-A-Guide-to-Reading-a-BMI-Chart.jpg" alt="">
+            <!-- https://www.fitterfly.com/blog/wp-content/uploads/2023/02/Understanding-Your-BMI-A-Guide-to-Reading-a-BMI-Chart.jpg -->
+            <div class="col-lg-6  col-sm-12 allingment-img">
+                <img class="responsive-imgg" src="/images/back_remover-removebg-preview.png" alt="">
             </div>
         </div>
     </div>
-   <div>
-    <h1 class = "display-3 top-then-nav">Why Millets ?</h1>
-   </div>
+    <div>
+        <h1 class="display-3 top-then-nav" style="background-color: rgb(255, 255, 255); ">Why Millets ?</h1>
+    </div>
 
-    <div class = "millets-type">
-        <div class="container-fluid text-center">
+    <div class="millets-type" style="background-color: rgb(255, 255, 255); ">
+        <div class="container-fluid ">
             <div class="row">
-                <div class="col-lg-6  col-sm-12 " style="background-color: red; height: 200px;">
-                    <h1>
-                        millets
-                    </h1>
+                <div class="col-lg-6  col-sm-12 " style="background-color: rgb(255, 255, 255); ">
+                    <p>
+                        Millets are a group of small-seeded grasses that have been cultivated for thousands of years and
+                        have played a crucial role in human diets in many parts of the world. Here are some reasons why
+                        people should consider including millets in their food habits:
+                    </p>
+                    <ul>
+                        <li>
+                            <strong>Nutritious: </strong>
+                            Millets are highly nutritious and packed with essential nutrients such as protein,
+                            fiber, vitamins, and minerals. They are a good source of calcium, iron, magnesium, and
+                            phosphorus, which are important for maintaining strong bones, healthy muscles, and other bodily
+                            functions.
+                        </li>
+                        <li>
+                            <strong>Gluten-free:</strong>
+                             Millets are naturally gluten-free, making them an excellent alternative for people
+                            with celiac disease or gluten intolerance. They are also low in allergens, making them a safe
+                            choice for people with food allergies.
+                        </li>
+                        <li>
+                            <strong>Low glycemic index:</strong>
+                           Millets have a low glycemic index, which means they release glucose into the
+                          bloodstream slowly, preventing sudden spikes in blood sugar levels. This makes them an ideal
+                          choice for people with diabetes or those looking to manage their blood sugar levels.
+                        </li>
+                        <li>
+                            <strong>Versatile:</strong>
+                             Millets are versatile and can be used in a variety of dishes such as salads, soups,
+                            stews, and even baked goods. They can be cooked like rice or used as a substitute for other
+                            grains in recipes.
+                        </li>
+                        <li>
+                            <strong>Sustainable:</strong>
+                             Millets are sustainable crops that require minimal water and can grow in harsh
+                            environments, making them an ideal choice for farmers in drought-prone regions. By including
+                            millets in your diet, you are supporting sustainable agriculture and helping to reduce your
+                            carbon footprint.
+                        </li>
+                        <li>
+                            <strong>Affordable:</strong>
+                             Millets are an affordable source of nutrition compared to other grains. They are
+                            readily available in most grocery stores and can be a cost-effective way to add variety and
+                            nutrition to your diet.
+                        </li>
+                    </ul>   
                 </div>
-                <div class="col-lg-6  col-sm-12" style="background-color: green;  height: 200px;">
-                    <h2>millets image</h2>
+                <div class="col-lg-6  col-sm-12 ">
+                    <img class="responsive-imgg" src="/images/millets faydee.png" alt="">
                 </div>
             </div>
         </div>
@@ -130,9 +184,9 @@
 
     <h1>this the the main website</h1>
     <p>
-        
+
     </p>
     <p>
-        
+
     </p>
     <%- include('partials/footer') %>

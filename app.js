@@ -20,7 +20,7 @@ const appUser = new mongoose.Schema({
 const User =  new mongoose.model('user' , appUser);
 app.get("/" , function(req , res){
     Userdata = null
-    res.render("home");
+    res.render("home"); 
 });
 app.get("/login" , function(req , res){
     Userdata = null
