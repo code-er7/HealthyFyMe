@@ -29,6 +29,15 @@
             src="https://cdn.shopify.com/s/files/1/0601/1505/8873/files/Untitled_1800_x_600_px_1600_x_600_px_2_1950x.png?v=1682149611"
             alt="">
     </div>
+
+
+
+
+
+
+
+
+
     <div class="container-fluid ">
         <div class="row">
             <div class="col-lg-6  col-sm-12 " style="background-color: #c2dac4; ">
@@ -69,12 +78,199 @@
             </div>
         </div>
     </div>
+
+
+
+    <div class="container containter-pt py-3">
+      <header>
+        <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+          <h3 class="display-6 fw-normal">Hey! <%=Userdata.name %></h3>
+          <h1 class="display-4 fw-normal">How Healthy You are ?</h1>
+          <h3 class="display-6 fw-normal">Let the BMI decide </h3> 
+          <p class="fs-5 text-body-secondary"> <strong>BMI</strong> stands for Body Mass Index. It is a measure of body fat based on an individual's weight and height. BMI is commonly used as a screening tool to determine if someone is underweight, normal weight, overweight, or obese. It is calculated by dividing a person's weight in kilograms by the square of their height in meters.</p>
+          <br>
+          <h3 class="display-6 fw-normal">Your Current BMI is <%=Userdata.bmi %> </h3>
+
+
+          <% if(Userdata.bmi<18){ %>
+            <p class="fs-5 text-body-secondary">You are little bit in underweight catogory , but don't worry millets will
+                surely help you to fullfill your protien requirements and help you become fit</p>
+                <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                  <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                      <div class="card-header py-3">
+                        <h4 class="my-0 fw-normal">Pearl millet</h4>
+                      </div>
+                      <div class="card-body">
+                        <!-- <h1 class="card-title pricing-card-title">$0<small class="text-body-secondary fw-light">/mo</small></h1> -->
+                        <img src="https://nrootsfood.com/wp-content/uploads/2021/08/pearl.jpg" alt="" width="70%" height="70%">
+                        <ul class="list-unstyled mt-3 mb-4">
+                          <li> Pearl millet is a popular millet variety that is relatively higher in calories and carbohydrates. It is a good source of energy and can be used to make porridge, rotis (Indian bread), and various other dishes.</li>
+                         
+                        </ul>
+                        <!-- <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button> -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                      <div class="card-header py-3 text-bg-primary border-primary">
+                        <h4 class="my-0 fw-normal">Finger Millets</h4>
+                      </div>
+                      <div class="card-body">
+                        <!-- <h1 class="card-title pricing-card-title">$29<small class="text-body-secondary fw-light">/mo</small></h1> -->
+                        <img src="https://m.media-amazon.com/images/I/41znvJvGCUL.jpg" alt="" width="70%" height="70%">
+                        <ul class="list-unstyled mt-3 mb-4">
+                          <li>Finger millet is rich in dietary fiber, protein, and essential amino acids. It also contains good amounts of healthy fats. Ragi flour can be used to prepare porridge, dosas (Indian pancakes), and baked goods.</li>
+                        </ul>
+                        <!-- <button type="button" class="w-100 btn btn-lg btn-outline-primary">Contact us</button> -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                      <div class="card-header py-3">
+                        <h4 class="my-0 fw-normal">Sorghum</h4>
+                      </div>
+                      <div class="card-body">
+                        <!-- <h1 class="card-title pricing-card-title">$15<small class="text-body-secondary fw-light">/mo</small></h1> -->
+                        <img src="https://origin.club/media/catalog/product/cache/86eaafd287624d270d87c663dd3976d5/s/o/sorghum_2__1.jpg" alt="" width="70%" height="70%">
+                        <ul class="list-unstyled mt-3 mb-4">
+                          <li>Sorghum is another nutritious millet that can help with weight gain. It is high in carbohydrates, dietary fiber, and certain micronutrients like iron and magnesium. Jowar flour can be used to make rotis.</li>
+                        </ul>
+                        <!-- <button type="button" class="w-100 btn btn-lg btn-outline-primary">Get started</button> -->
+                      </div>
+                    </div>
+                  </div>        
+
+            <% } %>
+            <% if(Userdata.bmi> 24){ %>
+                    <p class="fs-5 text-body-secondary">You are little bit in overweight catogory , but don't worry these
+                        millets will bring you back in shape in no time</p>
+                       
+                          <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                            <div class="col">
+                              <div class="card mb-4 rounded-3 shadow-sm">
+                                <div class="card-header py-3">
+                                  <h4 class="my-0 fw-normal">Little millet</h4>
+                                </div>
+                                <div class="card-body">
+                                  <!-- <h1 class="card-title pricing-card-title">$0<small class="text-body-secondary fw-light">/mo</small></h1> -->
+                                  <img src="https://shop.myharvestfarms.com/wp-content/uploads/2021/09/Samai-Little-Millet.png" alt="" width="70%" height="70%">
+                                  <ul class="list-unstyled mt-3 mb-4">
+                                    <li> Fiber-rich: Little millet is high in dietary fiber, which aids digestion. The fiber content in little millet can contribute to a feeling of fullness and may assist in weight loss efforts.</li>
+                                   
+                                  </ul>
+                                  <!-- <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button> -->
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                                <div class="card-header py-3 text-bg-primary border-primary">
+                                  <h4 class="my-0 fw-normal">Foxtail millet</h4>
+                                </div>
+                                <div class="card-body">
+                                  <!-- <h1 class="card-title pricing-card-title">$29<small class="text-body-secondary fw-light">/mo</small></h1> -->
+                                  <img src="https://origin.club/media/catalog/product/cache/86eaafd287624d270d87c663dd3976d5/f/o/foxtail_millet_1.jpg" alt="" width="70%" height="70%">
+                                  <ul class="list-unstyled mt-3 mb-4">
+                                    <li> Italian millet is a low-calorie millet that contains a good amount of dietary fiber. It can help control appetite, maintain steady blood sugar levels, and support weight loss efforts.
+
+                                    </li>
+                                  </ul>
+                                  <!-- <button type="button" class="w-100 btn btn-lg btn-outline-primary">Contact us</button> -->
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="card mb-4 rounded-3 shadow-sm">
+                                <div class="card-header py-3">
+                                  <h4 class="my-0 fw-normal">BrownTop Millet</h4>
+                                </div>
+                                <div class="card-body">
+                                  <!-- <h1 class="card-title pricing-card-title">$15<small class="text-body-secondary fw-light">/mo</small></h1> -->
+                                  <img src="https://www.puremart.in/images/products/331-browntop-millet-250-gms-1600950930.jpeg" alt="" width="70%" height="70%">
+                                  <ul class="list-unstyled mt-3 mb-4">
+                                    <li> Browntop millet is a nutritious millet variety that is low in calories and high in fiber. It can aid in digestion, promote fullness, and assist in weight management.</li>
+                                  </ul>
+                                  <!-- <button type="button" class="w-100 btn btn-lg btn-outline-primary">Get started</button> -->
+                                </div>
+                              </div>
+                            </div>  
+
+
+            <% } %>
+            <% if (Userdata.bmi < 24 & Userdata.bmi>18){ %>
+                <p class="fs-5 text-body-secondary">That's pretty nice , you are already Fit Here are some
+                     millets which will keep you in shape</p>
+                      <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                        <div class="col">
+                          <div class="card mb-4 rounded-3 shadow-sm">
+                            <div class="card-header py-3">
+                              <h4 class="my-0 fw-normal">Pearl millet</h4>
+                            </div>
+                            <div class="card-body">
+                              <!-- <h1 class="card-title pricing-card-title">$0<small class="text-body-secondary fw-light">/mo</small></h1> -->
+                              <img src="https://nrootsfood.com/wp-content/uploads/2021/08/pearl.jpg" alt="" width="70%" height="70%">
+                              <ul class="list-unstyled mt-3 mb-4">
+                                <li> Pearl millet is a popular millet variety that is relatively higher in calories and carbohydrates. It is a good source of energy and can be used to make porridge, rotis (Indian bread), and various other dishes.</li>
+                               
+                              </ul>
+                              <!-- <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button> -->
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                            <div class="card-header py-3 text-bg-primary border-primary">
+                              <h4 class="my-0 fw-normal">Foxtail Millet</h4>
+                            </div>
+                            <div class="card-body">
+                              <!-- <h1 class="card-title pricing-card-title">$29<small class="text-body-secondary fw-light">/mo</small></h1> -->
+                              <img src="https://origin.club/media/catalog/product/cache/86eaafd287624d270d87c663dd3976d5/f/o/foxtail_millet_1.jpg" alt="" width="70%" height="70%">
+                              <ul class="list-unstyled mt-3 mb-4">
+                                <li>Foxtail millet is a good source of protein, with approximately 12-13% protein content by weight. It also contains good amounts of healthy fats. Ragi flour can be used to prepare porridge, dosas, and baked goods.</li>
+                              </ul>
+                              <!-- <button type="button" class="w-100 btn btn-lg btn-outline-primary">Contact us</button> -->
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card mb-4 rounded-3 shadow-sm">
+                            <div class="card-header py-3">
+                              <h4 class="my-0 fw-normal">Barnyard Millet</h4>
+                            </div>
+                            <div class="card-body">
+                              <!-- <h1 class="card-title pricing-card-title">$15<small class="text-body-secondary fw-light">/mo</small></h1> -->
+                              <img src="https://cdn.shopify.com/s/files/1/0475/8398/5816/products/Barnyard_millet_5726a77d-befe-4086-abaa-c551c7b95fef_869x869.jpg?v=1605758305" alt="" width="70%" height="70%">
+                              <ul class="list-unstyled mt-3 mb-4">
+                                <li>Barnyard millet, also known as "Sanwa" or "Echinochloa frumentacea," is a small-seeded millet that belongs to the grass family. It is commonly consumed as a staple food in many parts of India and other Asian countries</li>
+                              </ul>
+                              <!-- <button type="button" class="w-100 btn btn-lg btn-outline-primary">Get started</button> -->
+                            </div>
+                          </div>
+                        </div>  
+
+            <% } %>
+        </div>
+      </header>
+      
+     
+        
+        </div>  
+    
+
+
+
+
+
+
     <div>
         <h1 class="display-3 top-then-nav" style="background-color: rgb(255, 255, 255); ">Why Millets ?</h1>
     </div>
 
     <div class="millets-type" style="background-color: rgb(255, 255, 255); ">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-6  col-sm-12 " style="background-color: rgb(255, 255, 255); ">
                     <p>

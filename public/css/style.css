@@ -14,7 +14,7 @@ body {
     background-color: #000;
   }
  .centermaker-1{
-    margin-left: 200px;
+    margin-left: 300px;
     padding-top: 100px;
  }  
  /* .full-size {
@@ -33,7 +33,7 @@ body {
     margin-right: 50px;
   }
   .register-padder{
-    padding-left: 180px;
+    padding-left: 110px;
     padding-bottom: 30px;
   }
   .div-2-pad{
@@ -86,5 +86,12 @@ body {
     .bd-placeholder-img-lg {
       font-size: 3.5rem;
     }
+  }
+  .container {
+    max-width: 960px;
+  }
+  
+  .pricing-header {
+    max-width: 950px;
   }
   
