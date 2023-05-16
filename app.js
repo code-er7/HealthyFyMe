@@ -77,7 +77,10 @@ app.post("/register" , function(req , res){
     var uname = req.body.name;
     var Uweight = req.body.weight;
     var Uheight = req.body.height;
-    const BMI = Uweight/(Uheight*Uheight);
+    let at = parseFloat(Uheight);
+    console.log(Uheight);
+    console.log(at);
+    const BMI = Uweight/(at*at);
     registerinDB();
     async function registerinDB(){
         try{

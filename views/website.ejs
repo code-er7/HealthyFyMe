@@ -14,9 +14,9 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    <a class="nav-link" href="#">Features</a>
-                    <a class="nav-link" href="#">Pricing</a>
-                    <a class="nav-link disabled">Premium</a>
+                    <a class="nav-link" href="#bmii">Compatibility</a>
+                    <a class="nav-link" href="#buyi">Buy</a>
+                    <a class="nav-link " href="#recii">Recipes</a>
                 </div>
             </div>
         </div>
@@ -38,7 +38,7 @@
 
 
 
-    <div class="container-fluid ">
+    <!-- <div class="container-fluid ">
         <div class="row">
             <div class="col-lg-6  col-sm-12 " style="background-color: #c2dac4; ">
                 <br>
@@ -57,8 +57,8 @@
                 <p class="display-lines"> Your Current BMI is
                 <h3 class="display-3">
                     <%=Userdata.bmi%>
-                </h3>
-                </p>
+                </h3> -->
+                <!-- </p>
                 <% if(Userdata.bmi<18){ %>
                     <p class="display-lines">You are little bit in underweight catogory , but don't worry millets will
                         surely help you to fullfill your protien requirements and help you become fit</p>
@@ -70,18 +70,12 @@
                                 <% if (Userdata.bmi < 24 & Userdata.bmi>18){ %>
                                     <p class="display-lines">That's pretty nice , you are already Fit Here are some
                                         millets which will keep you in shape</p>
-                                    <% } %>
-            </div>
-            <!-- https://www.fitterfly.com/blog/wp-content/uploads/2023/02/Understanding-Your-BMI-A-Guide-to-Reading-a-BMI-Chart.jpg -->
-            <div class="col-lg-6  col-sm-12 allingment-img">
-                <img class="responsive-imgg" src="/images/back_remover-removebg-preview.png" alt="">
-            </div>
-        </div>
-    </div>
+                                    <% } %> -->
+       
 
 
 
-    <div class="container containter-pt py-3">
+    <div id="bmii" class="container containter-pt py-3">
       <header>
         <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
           <h3 class="display-6 fw-normal">Hey! <%=Userdata.name %></h3>
@@ -326,13 +320,13 @@
         </div>
         <main>
 
-            <section class="py-5 text-center container">
+            <section id="buyi" class="py-5 text-center container">
               <div class="row py-lg-5">
                 <div class="col-lg-6 col-md-8 mx-auto">
                   <h1 class="fw-light">Convinced to Buy ?</h1>
                   <p class="lead text-muted">Don't worry by adding millets to your diet you are making one of the best decision for you health .</p>
                   <p>
-                    <a href="#" class="btn btn-primary my-2">Read More </a>
+                    <a href="https://en.wikipedia.org/wiki/Millet" class="btn btn-primary my-2">Read More </a>
                     <a href="#" class="btn btn-secondary my-2">I will Buy Later</a>
                   </p>
                 </div>
@@ -417,7 +411,7 @@
                       <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
                       <img src="https://www.wellcurve.in/blog/wp-content/uploads/2021/02/Barnyard-Millet.jpg" alt="">
                       <div class="card-body">
-                        <p class="card-text"><strong>Barnyard Millet</strong> is popular in millets name list and also known as Sanwa. It is stacked with high amounts of dietary fibres that help improve bowel movement and aiding weight loss. It is rich in calcium and phosphorus, which can strengthen bones</p>
+                        <p class="card-text"><strong>Barnyard Millet</strong> is popular in millets name list and also known as Sanwa. It is stacked with high amounts of dietary fibres that help improve bowel movement and aiding weight loss. </p>
                         <div class="d-flex justify-content-between align-items-center">
                           <div class="btn-group">
                             <a href="https://www.amazon.in/Miltop-Barnyard-Millet-1-kg/dp/B0BQF65K52/ref=sr_1_6?crid=MPNY5DAFLVX5&keywords=Barnyard%2BMillet&qid=1683543468&sprefix=barnyard%2Bmillet%2Caps%2C220&sr=8-6&th=1" class="btn btn-sm btn-outline-secondary"  target="_blank">Buy</a>
@@ -433,7 +427,7 @@
                       <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
                       <img src="https://www.wellcurve.in/blog/wp-content/uploads/2022/03/buckwheat-millet.jpg" alt="">
                       <div class="card-body">
-                        <p class="card-text"><strong>Buckwheat</strong>, also known as Kuttu in India, is one of the most common types of Millet and is often used during the Navratra fasting time. It is diabetic-friendly and helps in reducing blood pressure. It is helpful for good cardiovascular health</p>
+                        <p class="card-text"><strong>Buckwheat</strong>, also known as Kuttu in India, is one of the most common types of Millet and is often used during the Navratra. It is diabetic-friendly and helps in reducing blood pressure.</p>
                         <div class="d-flex justify-content-between align-items-center">
                           <div class="btn-group">
                             <a href="https://www.amazon.in/Mill%C3%A9-Foxtail-Millet-Chemicals-Protein/dp/B0B8J3VRQD/ref=sr_1_1_sspa?crid=E280WSZ96A58&keywords=Buckwheat&qid=1683543511&sprefix=buckwheat%2Caps%2C394&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"  target="_blank" class="btn btn-sm btn-outline-secondary">Buy</a>
@@ -500,7 +494,7 @@
           </main>
           
           <div>
-            <h1 class="display-3 top-then-nav" style="background-color: rgb(255, 255, 255); ">Recipes</h1>
+            <h1 id="recii" class="display-3 top-then-nav" style="background-color: rgb(255, 255, 255); ">Recipes</h1>
         </div>
         <div class="container text-center">
             <div class="row">
@@ -548,13 +542,24 @@
             </div>
         </div>
     </div>
+    <hr>
+    <div class="contact-me">
+      <h2  class="col2">Get In Touch</h2>
+      <h3 class="coulorr">We are always open to feedbacks</h3>
+      <p class="tty">If you have a big order that you wanna give us ot think you need my help with something or just fancy saying hey, then get in touch.</p>
+      <div class="gtht">
+        <a class="btno" href="mailto:chetanrao2003@gmail.com">CONTACT ME</a>
+      </div>
+      
+    </div>
+  </div>
 
 
-    <h1>this the the main website</h1>
-    <p>
+  <div class="bottom-container">
+    <a class=" aa " href="https://www.linkedin.com/in/chetan-rao-04182821b/ "target=”_blank” >LinkedIn</a>
+    <a class=" aa " href="https://github.com/code-er7" target=”_blank” >GitHub</a>
+    <a class="aa " href="https://discord.com/" target=”_blank” >Discord</a>
+    <p class="df">© 2023 HealthyFy Me</p>
+  </div>
 
-    </p>
-    <p>
-
-    </p>
     <%- include('partials/footer') %>
